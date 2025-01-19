@@ -35,7 +35,7 @@ function CardsRow() {
               key={item.id}
               title={item.title}
               price={item.price}
-              img={item.img || `/images/${item.id}.jpg`} // Optional fallback for image
+              img={item.img || `/pelter-clone/images/${item.id}.jpg`} // Optional fallback for image
             />
           ))}
         </div>
