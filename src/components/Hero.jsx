@@ -5,12 +5,12 @@ function Hero() {
     <article className="hero">
       <img
         className="logoHero"
-        src="../assets/images/pelter logo.png"
+        src="/public/images/pelter logo.jpg"
         alt="logo img"
       />
       <img
         className="cover"
-        src="../assets/images/backGround-img.jpg"
+        src="/public/images/backGround-img.jpg"
         alt="hero cover img"
       />
       <section className="heroBtns">

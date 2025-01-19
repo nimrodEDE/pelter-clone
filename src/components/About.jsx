@@ -12,7 +12,7 @@ function About() {
       <section className="colomns">
         <div style={{ order: 2 }} className="colomns-img">
           <img
-            src="/src/assets/images/about-img1.jpg"
+            src="/public/images/about-img1.jpg"
             alt="Wine Bottles on the ground"
           />
         </div>
@@ -27,13 +27,13 @@ function About() {
       </section>
       <img
         className="slidingImg"
-        src="/src/assets/images/sliding-picture-1.jpg"
+        src="/public/images/sliding-picture-1.jpg"
         alt="sliding-picture-1"
       />
       <section className="colomns">
         <div className="colomns-img VC">
           <img
-            src="/src/assets/images/about-img2.jpg"
+            src="/public/images/about-img2.jpg"
             alt="Wine Bottles on the ground"
           />
         </div>
@@ -53,7 +53,7 @@ function About() {
       </section>
       <img
         className="slidingImg"
-        src="/src/assets/images/sliding-picture-2.jpg"
+        src="/public/images/sliding-picture-2.jpg"
         alt="sliding-picture-2"
       />
       <section className="colomns">
@@ -62,7 +62,7 @@ function About() {
           className="colomns-img VC"
         >
           <img
-            src="/src/assets/images/about-img3.jpg"
+            src="/public/images/about-img3.jpg"
             alt="Wine Bottles on the ground"
           />
         </div>
