@@ -28,11 +28,11 @@ body {
 }
 
 .cardsRow {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-auto-flow: column;
   overflow-x: auto;
-  width: calc(4 * 350px + 9 * 1rem);
-  margin-inline: auto;
+  grid-auto-columns: 100%;
+  gap: 1rem;
 }
 
 .cardsRow::-webkit-scrollbar {
@@ -51,4 +51,16 @@ hr {
   width: 7rem;
   margin-inline: auto;
   opacity: 0.6;
+}
+
+@media (min-width: 640px) {
+  .cardsRow {
+    grid-auto-columns: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .cardsRow {
+    grid-auto-columns: 25%;
+  }
 }
