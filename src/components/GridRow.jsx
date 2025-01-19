@@ -27,7 +27,7 @@ function GridRow() {
       </section>
       <img
         className="slidingImg"
-        src="/src/assets/images/sliding-picture-3.jpg"
+        src="/pelter-clone/images/sliding-picture-3.jpg"
         alt="sliding-picture-3"
       />
       <section
@@ -63,7 +63,7 @@ function GridRow() {
         </div>
         <div style={{ marginTop: "5rem" }} className="colomns-img">
           <img
-            src="/src/assets/images/about-img4.jpg"
+            src="/pelter-clone/images/about-img4.jpg"
             alt="Wine Bottles on the ground"
           />
         </div>
@@ -72,7 +72,7 @@ function GridRow() {
         <div className="left">
           <img
             className="imgBox"
-            src="/src/assets/images/boxImg.png"
+            src="/pelter-clone/images/boxImg.png"
             alt="boxImg"
           />
         </div>

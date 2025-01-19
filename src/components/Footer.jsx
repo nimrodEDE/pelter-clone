@@ -30,7 +30,7 @@ function Footer() {
     <footer>
       <div className="footer-1">
         <div className="leftFooter">
-          <img src="/public/images/pelter logo.png" alt="logo" />
+          <img src="/pelter-clone/images/pelter logo.png" alt="logo" />
         </div>
         <div dir="rtl" className="rightFooter">
           {/* Shop List */}
