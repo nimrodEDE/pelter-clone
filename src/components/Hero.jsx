@@ -5,7 +5,7 @@ function Hero() {
     <article className="hero">
       <img
         className="logoHero"
-        src="/pelter-clone/images/pelter logo.jpg"
+        src="/pelter-clone/images/pelter logo.png"
         alt="logo img"
       />
       <img
