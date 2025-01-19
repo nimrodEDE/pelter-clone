@@ -1,0 +1,52 @@
+:root {
+  --greenColor: #242e2c;
+  --lightGreenColor: #515545;
+  --bgColor: #f8f5ef;
+  --buttonColor: #e8e1d1;
+  --formTitleColor: #262b20;
+  --CommentColor: #4f5652;
+  --hebFont: "GretaSansHL-Medium";
+  --enFont: "futura-pt", sans-serif;
+  --borderStyle: solid 1px #d1c6b0;
+  --white: #fff;
+}
+
+.card {
+  text-align: center;
+  border: 1.5px solid #dfd2b6;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 350px;
+  min-height: 470px;
+}
+
+.wineImg {
+  margin-top: 1rem;
+  width: 20%;
+}
+
+.wineName {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: var(--CommentColor);
+}
+
+.price {
+  margin: 2rem 0 0.5rem;
+  color: #87948d;
+  font-weight: 600;
+}
+
+.addCartBtn {
+  width: 90%;
+  height: 3rem;
+  background-color: var(--buttonColor);
+  border: none;
+  color: var(--formTitleColor);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}

@@ -1,0 +1,24 @@
+.info {
+  text-align: center;
+  height: calc(90vh - 6.3rem);
+}
+
+.gridRow {
+  display: grid;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  grid-auto-columns: 100%;
+  /* direction: ltr; */
+}
+
+@media (min-width: 640px) {
+  .gridRow {
+    grid-auto-columns: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .gridRow {
+    grid-auto-columns: 33%;
+  }
+}

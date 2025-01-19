@@ -1,0 +1,54 @@
+:root {
+  --greenColor: #242e2c;
+  --lightGreenColor: #515545;
+  --bgColor: #f8f5ef;
+  --buttonColor: #e8e1d1;
+  --formTitleColor: #262b20;
+  --CommentColor: #4f5652;
+  --hebFont: "GretaSansHL-Medium";
+  --enFont: "futura-pt", sans-serif;
+  --borderStyle: solid 1px #d1c6b0;
+  --white: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.store {
+  background-color: var(--white);
+  text-align: center;
+  padding: 1rem;
+}
+
+.title {
+  margin-top: 2rem;
+}
+
+.cardsRow {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  width: calc(4 * 350px + 9 * 1rem);
+  margin-inline: auto;
+}
+
+.cardsRow::-webkit-scrollbar {
+  display: none; /* Optional: Hide the scrollbar */
+}
+
+.storeLink {
+  display: block;
+  text-decoration: none;
+  color: var(--CommentColor);
+  font-weight: bold;
+  margin: 2rem 0 0.5rem;
+}
+
+hr {
+  width: 7rem;
+  margin-inline: auto;
+  opacity: 0.6;
+}

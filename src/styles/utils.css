@@ -1,0 +1,190 @@
+:root {
+  --greenColor: #242e2c;
+  --lightGreenColor: #515545;
+  --bgColor: #f8f5ef;
+  --buttonColor: #e8e1d1;
+  --formTitleColor: #262b20;
+  --CommentColor: #4f5652;
+  --hebFont: "GretaSansHL-Medium";
+  --enFont: "futura-pt", sans-serif;
+  --borderStyle: solid 1px #d1c6b0;
+  --white: #fff;
+}
+
+img {
+  width: 100%;
+}
+
+.topLine {
+  width: 3rem;
+  height: 0.05rem;
+  background-color: var(--lightGreenColor);
+  margin-inline: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.subTitle {
+  font-size: 0.6rem;
+  letter-spacing: 0.08rem;
+  font-weight: 500;
+  color: var(--lightGreenColor);
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--greenColor);
+  margin-bottom: 2rem;
+}
+
+.desc {
+  color: var(--formTitleColor);
+  opacity: 0.8;
+  letter-spacing: 0.2px;
+  line-height: 1.5rem;
+  width: 50ch;
+  margin-bottom: 2rem;
+}
+
+.specialBtn {
+  cursor: pointer;
+  width: 9.5rem;
+  height: 3.4rem;
+  margin-inline: auto;
+  background-color: var(--bgColor);
+  border: 1px solid #c9bc9d;
+  color: var(--lightGreenColor);
+  font-size: 0.98rem;
+  font-weight: 550;
+  margin-bottom: 4rem;
+}
+
+.slidingImg {
+  width: 100%;
+  height: min(30vh, 30rem);
+  object-fit: cover;
+}
+
+.gridItem {
+  text-align: center;
+  min-width: max(100%, 23.5rem);
+  padding: 0 3rem;
+  /* flex-shrink: 0; Prevent the items from shrinking */
+}
+
+.infoCardTitle {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 1.5rem 0 1rem;
+}
+
+.formBox {
+  width: min(85%, 80.375rem);
+  /* max-height: 30rem; */
+  margin-inline: auto;
+  margin-bottom: 3rem;
+  border: 2px solid var(--buttonColor);
+  background-color: var(--bgColor);
+  display: flex;
+  flex-direction: column;
+}
+
+.imgBox {
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.formBox .right {
+  order: 1;
+  padding: 1rem;
+}
+
+.formBox .right > * {
+  margin: 1rem 0;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.formBox .right h5 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.formBox .left {
+  padding: 1rem;
+  max-width: 100%;
+  /* flex: 1; */
+  order: 2;
+}
+
+#mail {
+  height: 2.4rem;
+  width: max(100%, 18rem);
+  border: none;
+}
+
+.labelAC {
+  font-size: 0.65rem;
+  vertical-align: text-top;
+  display: inline;
+}
+
+.acceptTermInput {
+  margin-top: 0.7rem;
+}
+
+#submitBtn {
+  display: block;
+  margin-inline: auto;
+  margin-top: 4rem;
+  width: 8rem;
+  height: 3rem;
+  border: none;
+  background-color: var(--buttonColor);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .slidingImg {
+    height: 70vh;
+  }
+
+  .desc {
+    font-size: 1rem;
+  }
+
+  .specialBtn {
+    width: 9rem;
+    height: 3.4rem;
+  }
+
+  .topLine {
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 850px) {
+  .formBox {
+    flex-direction: row;
+  }
+
+  .formBox .right {
+    margin: 2rem auto;
+    order: 2;
+  }
+
+  .formBox .left {
+    width: 50%;
+    order: 1;
+  }
+  .acceptTermInput {
+    margin-top: 2rem;
+  }
+}

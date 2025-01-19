@@ -1,0 +1,114 @@
+:root {
+  --greenColor: #242e2c;
+  --lightGreenColor: #515545;
+  --bgColor: #f8f5ef;
+  --buttonColor: #e8e1d1;
+  --formTitleColor: #262b20;
+  --CommentColor: #4f5652;
+  --hebFont: "GretaSansHL-Medium";
+  --enFont: "futura-pt", sans-serif;
+  --borderStyle: solid 1px #d1c6b0;
+  --white: #fff;
+}
+
+.hero {
+  height: calc(100vh - 6.3rem);
+  width: 100%;
+  max-width: max(94rem, 100%);
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative; /* Makes the container a reference for absolute positioning */
+}
+
+.cover {
+  width: 100vw;
+  height: 100%;
+  display: block;
+  min-width: 1200px;
+  object-fit: cover; /*Ensures the image covers the container without distortion */
+  z-index: -1;
+}
+
+.logoHero {
+  position: absolute;
+  top: 20%; /* Adjust to position the logo vertically */
+  left: 50%; /* Centers the logo horizontally */
+  transform: translateX(-50%); /* Ensures the logo is exactly centered */
+  z-index: 1000; /* Brings the logo above the cover image */
+  max-width: min(50%, 12.813rem); /* Adjust size as needed */
+}
+
+.heroBtns {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  top: 55%;
+}
+
+.buttonWrapper {
+  cursor: pointer;
+  background-color: rgb(81, 85, 69, 0.65);
+  border: 1px solid var(--buttonColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8.5rem;
+  height: 3rem;
+  transition: ease-in-out 0.2s background-color;
+}
+
+.buttonWrapper:hover {
+  background-color: rgb(81, 85, 69, 0.9);
+}
+
+.buttonWrapper a {
+  color: var(--white); /* Ensures text color remains strong */
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.scroll p {
+  font-size: 0.7rem;
+  color: var(--white);
+}
+
+.verticalLine {
+  width: 1px;
+  background-color: var(--bgColor);
+  margin-inline: auto;
+
+  animation: shrinkExpand 1s infinite ease-in-out;
+}
+
+/* Keyframes for the animation */
+@keyframes shrinkExpand {
+  0%,
+  100% {
+    height: 2rem; /* Original height */
+  }
+  50% {
+    height: 1rem; /* Half the height */
+  }
+}
+
+@media (min-width: 640px) {
+  .heroBtns {
+    flex-direction: row;
+  }
+}

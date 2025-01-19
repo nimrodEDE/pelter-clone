@@ -1,0 +1,162 @@
+:root {
+  --greenColor: #242e2c;
+  --lightGreenColor: #515545;
+  --bgColor: #f8f5ef;
+  --buttonColor: #e8e1d1;
+  --formTitleColor: #262b20;
+  --CommentColor: #4f5652;
+  --hebFont: "GretaSansHL-Medium";
+  --enFont: "futura-pt", sans-serif;
+  --borderStyle: solid 1px #d1c6b0;
+  --white: #fff;
+}
+
+.footer-1 {
+  width: 100%;
+  background-color: #fbfbf7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+.leftFooter {
+  width: 80%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.leftFooter img {
+  width: 30%;
+  margin: auto;
+  cursor: pointer;
+}
+
+.rightFooter {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.list {
+  list-style: none;
+  margin-right: 2rem;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 500ms;
+}
+
+.list.expanded {
+  grid-template-rows: 1fr;
+}
+
+.list > * {
+  overflow: hidden;
+}
+
+.rightFooter hr {
+  width: 90vw;
+  margin-bottom: 2rem;
+
+  margin: 0 1.8rem 2rem 0;
+}
+
+.listHeader {
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+ul > * {
+  color: var(--lightGreenColor);
+  font-size: 0.9rem;
+}
+
+ul > *:not(:last-child) {
+  margin: 1rem 0;
+}
+
+.footer-2 {
+  display: block;
+  background-color: var(--lightGreenColor);
+  color: var(--bgColor);
+  text-align: center;
+  font-weight: 500;
+  min-height: 3rem;
+  padding-top: 1.1rem;
+  font-size: 0.6rem;
+}
+
+.author {
+  display: none;
+}
+
+@media (min-width: 475px) {
+}
+
+@media (min-width: 640px) {
+  .footer-1 {
+    height: 18rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-2 {
+    font-size: 1rem;
+  }
+
+  .leftFooter {
+    width: 30%;
+    text-align: unset;
+  }
+
+  .leftFooter img {
+    width: 30%;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .list {
+    font-size: 0.8rem;
+  }
+
+  .list li {
+    display: block !important;
+  }
+
+  .rightFooter {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .rightFooter > * {
+    margin-top: 4rem;
+    font-size: 0.9rem;
+  }
+
+  .rightFooter hr {
+    width: 8rem;
+    margin-bottom: 0;
+  }
+  .author {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    color: white;
+    padding-top: 1.6rem;
+    font-size: 0.8rem;
+    margin-right: 0.6rem;
+  }
+  .list.expanded {
+    width: 100%;
+    /* display: flex; */
+  }
+}
+
+@media (min-width: 1000px) {
+}

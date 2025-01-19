@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "סוביון בלאן",
+    "price": 84,
+    "img": "/data/images/1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "שיראז גראנש 2010",
+    "price": 700,
+    "img": "/data/images/2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "קברנה סוביניון 2016",
+    "price": 430,
+    "img": "/data/images/3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "קומולוס 2013",
+    "price": 495,
+    "img": "/data/images/4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "ברברה 2015 - מגנום",
+    "price": 667,
+    "img": "/data/images/5.jpg"
+  }
+]

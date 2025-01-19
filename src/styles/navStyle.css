@@ -1,0 +1,61 @@
+:root {
+  --greenColor: #242e2c;
+  --lightGreenColor: #515545;
+  --bgColor: #f8f5ef;
+  --buttonColor: #e8e1d1;
+  --formTitleColor: #262b20;
+  --CommentColor: #4f5652;
+  --hebFont: "GretaSansHL-Medium";
+  --enFont: "futura-pt", sans-serif;
+  --borderStyle: solid 1px #d1c6b0;
+  --white: #fff;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /* width: 100vw; */
+}
+
+.aboveNav {
+  background-color: var(--lightGreenColor);
+  color: var(--bgColor);
+  text-align: center;
+  letter-spacing: 0.25rem;
+}
+
+nav {
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#logo {
+  margin-top: 0.5rem;
+}
+
+nav .left > *,
+nav .right > * {
+  margin-inline: 0.8rem;
+  margin-top: 0.4rem;
+}
+
+@media (min-width: 640px) {
+  .aboveNav {
+    height: 2.3rem;
+    padding-top: 0.5rem;
+    background-color: var(--greenColor);
+    font-size: 0.9rem;
+  }
+
+  nav {
+    height: 4rem;
+  }
+  nav .left > *,
+  nav .right > * {
+    margin-inline: 3rem;
+  }
+}
