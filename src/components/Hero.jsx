@@ -3,10 +3,14 @@ import "../styles/hero.css";
 function Hero() {
   return (
     <article className="hero">
-      <img className="logoHero" src="/images/pelter logo.jpg" alt="logo img" />
+      <img
+        className="logoHero"
+        src="/pelter-clone/images/pelterlogo.jpg"
+        alt="logo img"
+      />
       <img
         className="cover"
-        src="/images/backGround-img.jpg"
+        src="/pelter-clone/images/backGround-img.jpg"
         alt="hero cover img"
       />
       <section className="heroBtns">
